@@ -29,22 +29,47 @@ public class GradeBoard {
             if (choice.equals("Calculate")){
                 System.out.println("Current Grade for Programming.");
                 double pro=sc1.nextDouble();
+                while(pro<0){
+                    System.out.println("Cannot enter negative values.");
+                    System.out.println("Try Again.");
+                    pro=sc1.nextDouble();
+                }
                 pro=Math.round(pro);
                 program1.add(pro);
                 System.out.println("Current Grade for Art.");
                 double art=sc2.nextDouble();
+                while(art<0){
+                    System.out.println("Cannot enter negative values.");
+                    System.out.println("Try Again.");
+                    art=sc2.nextDouble();
+                }
                 art=Math.round(art);
                 art1.add(art);
                 System.out.println("Current Grade for Science.");
                 double science=sc3.nextDouble();
+                while(science<0){
+                    System.out.println("Cannot enter negative values.");
+                    System.out.println("Try Again.");
+                    science=sc3.nextDouble();
+                }
                 science=Math.round(science);
                 science1.add(science);
                 System.out.println("Current Grade for Math.");
                 double math=sc4.nextDouble();
+                while(math<0){
+                    System.out.println("Cannot enter negative values.");
+                    System.out.println("Try Again.");
+                    math=sc4.nextDouble();
+                }
                 math=Math.round(math);
                 math1.add(math);
                 System.out.println("Current Grade for History.");
                 double history=sc5.nextDouble();
+                while(history<0){
+                    System.out.println("Cannot enter negative values.");
+                    System.out.println("Try Again.");
+                    history=sc5.nextDouble();
+                }
                 history=Math.round(history);
                 history1.add(history);
                 counter++;
